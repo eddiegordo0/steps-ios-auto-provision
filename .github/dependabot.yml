@@ -1,0 +1,33 @@
+version: 2
+updates:
+- package-ecosystem: bundler
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: excon
+    versions:
+    - 0.78.1
+    - 0.79.0
+    - 0.80.1
+  - dependency-name: fastlane
+    versions:
+    - 2.172.0
+    - 2.173.0
+    - 2.174.0
+    - 2.175.0
+    - 2.176.0
+    - 2.177.0
+    - 2.178.0
+    - 2.179.0
+    - 2.180.0
+    - 2.180.1
+  - dependency-name: rubocop
+    versions:
+    - 1.10.0
+    - 1.11.0
+    - 1.12.0
+    - 1.12.1
+    - 1.9.0
+    - 1.9.1
